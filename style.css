@@ -18,9 +18,9 @@ body {
 }
 
 .logo {
-    height: 120px; /* diminui um pouco */
+    height: 250px; /* aumentar */
     width: auto;
-    margin-bottom: -5px;
+    margin-bottom: -20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
