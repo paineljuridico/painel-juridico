@@ -7,7 +7,7 @@ body {
 
 .container {
     background: white;
-    width: 80%; /* AUMENTEI aqui para deixar o painel maior! */
+    width: 100%; /* AUMENTEI aqui para deixar o painel maior! */
     max-width: 1200px;
     margin: 40px auto;
     padding: 40px;
@@ -17,8 +17,8 @@ body {
 }
 
 .logo {
-    width: 250px; /* Tamanho da logo */
-    margin-bottom: 10px; /* DIMINUI a distância entre logo e produtividade */
+    width: 300px; /* Tamanho da logo */
+    margin-bottom: -10px; /* DIMINUI a distância entre logo e produtividade */
 }
 
 h1 {
