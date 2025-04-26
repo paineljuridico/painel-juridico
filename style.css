@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    height: 250px; /* aumenta a altura da logo */
+    height: 180px; /* aumenta o tamanho da logo */
     width: auto;
     margin-bottom: -10px;
     display: block;
@@ -32,42 +32,8 @@ h1 {
     font-size: 2.5em; /* aumenta o tamanho do título */
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-weight: bold;
-    letter-spacing: 1px; /* espaçamento entre as letras */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* adiciona uma sombra leve */
-}
-
-}
-
-.formulario {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.formulario input, .formulario textarea {
-    width: 100%;
-    margin: 6px 0;
-    padding: 12px;
-    border: 1px solid #cccccc;
-    border-radius: 10px;
-    font-size: 15px;
-    background-color: #f9f9f9;
-}
-
-.formulario button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    font-size: 16px;
-    background-color: #0a1744;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.formulario button:hover {
-    background-color: #102775;
+    letter-spacing: 1px; /* espaçamento entre letras */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* sombra leve */
 }
 
 .buttons {
