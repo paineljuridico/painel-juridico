@@ -9,26 +9,27 @@
 <body>
     <div class="container">
         <img src="logo.png" alt="Logo Jofre & Magalhães" class="logo">
-
-
+        
         <h1>Produtividade</h1>
-    
-    
-
+        
         <div class="buttons">
             <button onclick="carregarModelo('peticaoInicial')">🔥 Petição Inicial</button>
-            <button onclick="carregarModelo('replica')">📝 Réplica</button>
+            <button onclick="carregarModelo('replica')">📄 Réplica</button>
             <button onclick="carregarModelo('contestacao')">⚖️ Contestação</button>
             <button onclick="carregarModelo('execucaoSentenca')">📜 Execução de Sentença</button>
         </div>
 
-        <textarea id="textoModelo" placeholder="Selecione um modelo para carregar..." rows="20"></textarea>
+        <textarea id="textoModelo" placeholder="Selecione um modelo para carregar..." rows="15"></textarea>
 
         <div class="actions">
             <button onclick="copiarTexto()">📋 Copiar Petição</button>
-            <button onclick="baixarTexto()">⬇️ Baixar Petição (Word)</button>
+            <button onclick="baixarTexto()">📥 Baixar Petição (Word)</button>
         </div>
     </div>
+
+    <footer class="footer">
+        © 2025 Jofre & Magalhães | Sistema Interno Jurídico
+    </footer>
 
     <script src="script.js"></script>
 </body>
