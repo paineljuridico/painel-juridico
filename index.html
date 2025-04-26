@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtividade - Painel Jurídico</title>
+    <title>Produtividade - Geração Automática</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <img src="logo.png" alt="Jofre & Magalhães" class="logo">
-        <h1>Produtividade</h1>
+<div class="container">
+    <img src="logo.png" alt="Logo Jofre & Magalhães" class="logo">
 
-        <div class="buttons">
-            <button onclick="carregarModelo('peticaoInicial')">🔥 Petição Inicial</button>
-            <button onclick="carregarModelo('replica')">📄 Réplica</button>
-            <button onclick="carregarModelo('contestacao')">⚖️ Contestação</button>
-            <button onclick="carregarModelo('execucaoSentenca')">📑 Execução de Sentença</button>
-        </div>
+    <h1>Gerador de Petição Inicial</h1>
 
-        <textarea id="textModelo" placeholder="Selecione um modelo para carregar..."></textarea>
+    <div class="formulario">
+        <input type="text" id="nomeAutor" placeholder="Nome do Autor">
+        <input type="text" id="cpfAutor" placeholder="CPF do Autor">
+        <input type="text" id="enderecoAutor" placeholder="Endereço Completo">
+        <input type="text" id="nomeReu" placeholder="Nome do Réu">
+        <input type="text" id="valorCausa" placeholder="Valor da Causa">
+        <input type="text" id="numeroProcesso" placeholder="Número do Processo">
+        <input type="text" id="varaProcesso" placeholder="Vara do Processo">
 
-        <div class="actions">
-            <button onclick="copiarTexto()">📋 Copiar Petição</button>
-            <button onclick="baixarTexto()">📥 Baixar Petição (Word)</button>
-        </div>
-
-        <div class="footer">
-            © 2025 Jofre & Magalhães | Sistema Interno Jurídico
-        </div>
+        <button onclick="gerarPeticao()">📄 Gerar Petição Inicial</button>
     </div>
 
-    <script src="script.js"></script>
+    <textarea id="textoPeticao" placeholder="Aqui aparecerá a petição preenchida..."></textarea>
+
+    <div class="actions">
+        <button onclick="copiarTexto()">📋 Copiar Petição</button>
+        <button onclick="baixarTexto()">📥 Baixar Petição (Word)</button>
+    </div>
+
+    <div class="footer">
+        © 2025 Jofre & Magalhães | Sistema Interno Jurídico
+    </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
