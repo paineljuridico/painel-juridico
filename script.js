@@ -1,58 +1,89 @@
-// Função para mostrar o formulário ao clicar no botão
+let tipoPeticao = ""; // variável para controlar qual modelo será gerado
+
 function mostrarFormulario(tipo) {
+    tipoPeticao = tipo; // salva o tipo selecionado
     document.getElementById('formularioPeticao').style.display = 'block';
-    window.scrollTo(0, document.body.scrollHeight); // rola para o formulário
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
-// Função para gerar a petição com os dados preenchidos
 function gerarPeticao() {
     const nomeAutor = document.getElementById('nomeAutor').value;
     const cpfAutor = document.getElementById('cpfAutor').value;
     const enderecoAutor = document.getElementById('enderecoAutor').value;
     const nomeReu = document.getElementById('nomeReu').value;
+    const cnpjReu = document.getElementById('cnpjReu').value;
     const valorCausa = document.getElementById('valorCausa').value;
-    const numeroProcesso = document.getElementById('numeroProcesso').value;
     const varaProcesso = document.getElementById('varaProcesso').value;
 
-    const peticao = `
+    let texto = "";
+
+    if (tipoPeticao === "peticaoInicial") {
+        texto = `
 EXCELENTÍSSIMO SENHOR DOUTOR JUIZ DE DIREITO DA ${varaProcesso}
 
 Processo nº ${numeroProcesso}
 
-${nomeAutor}, brasileiro, portador do CPF nº ${cpfAutor}, residente e domiciliado à ${enderecoAutor}, vem, respeitosamente, por meio de seus advogados infra-assinados, propor
+${nomeAutor}, brasileiro, portador do CPF nº ${cpfAutor}, residente à ${enderecoAutor}, por seus advogados infra-assinados, vem propor
 
 AÇÃO DE INDENIZAÇÃO POR DANOS MORAIS
 
-em face de ${nomeReu}, pelas razões de fato e de direito que passa a expor.
+em face de ${nomeReu}, pelos fundamentos de fato e de direito que passa a expor.
 
-DOS FATOS
-(Descrever aqui os fatos...)
+[DESCRIÇÃO DOS FATOS]
 
-DO PEDIDO
-Diante do exposto, requer a condenação do réu ao pagamento de ${valorCausa}, acrescido de juros e correção monetária.
+[VALOR DA CAUSA]: ${valorCausa}
+        `;
+    } else if (tipoPeticao === "replica") {
+        texto = `
+EXCELENTÍSSIMO SENHOR DOUTOR JUIZ DE DIREITO DA ${varaProcesso}
 
-Termos em que, pede deferimento.
+Processo nº ${numeroProcesso}
 
-Natal/RN, 26 de abril de 2025.
-`;
+${nomeAutor}, autor da ação em epígrafe, por seus advogados, vem, respeitosamente, apresentar
 
-    document.getElementById('textoPeticao').value = peticao;
+RÉPLICA
+
+à contestação ofertada por ${nomeReu}, pelos seguintes fundamentos de fato e de direito:
+
+[DESCRIÇÃO DA IMPUGNAÇÃO]
+
+[VALOR DA CAUSA]: ${valorCausa}
+        `;
+    } else if (tipoPeticao === "contestacao") {
+        texto = `
+EXCELENTÍSSIMO SENHOR DOUTOR JUIZ DE DIREITO DA ${varaProcesso}
+
+Processo nº ${numeroProcesso}
+
+${nomeReu}, por seus advogados infra-assinados, nos autos da ação movida por ${nomeAutor}, vem, respeitosamente, apresentar
+
+CONTESTAÇÃO
+
+pelos motivos de fato e de direito que passa a expor:
+
+[DEFESA]
+
+[VALOR DA CAUSA]: ${valorCausa}
+        `;
+    } else {
+        texto = "Selecione um tipo de petição para gerar.";
+    }
+
+    document.getElementById('textoPeticao').value = texto;
 }
 
-// Função para copiar o texto gerado
 function copiarTexto() {
     const textarea = document.getElementById('textoPeticao');
     textarea.select();
     document.execCommand('copy');
-    alert('Petição copiada com sucesso! ✅');
+    alert('Documento copiado com sucesso! ✅');
 }
 
-// Função para baixar o texto gerado
 function baixarTexto() {
     const texto = document.getElementById('textoPeticao').value;
     const blob = new Blob([texto], { type: 'application/msword' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = 'peticao_inicial.doc';
+    link.download = tipoPeticao + '.doc';
     link.click();
 }
