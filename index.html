@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtividade - Geração Automática</title>
+    <title>Painel Jurídico - Produtividade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,25 +11,34 @@
 <div class="container">
     <img src="logo.png" alt="Logo Jofre & Magalhães" class="logo">
 
-    <h1>Gerador de Petição Inicial</h1>
+    <h1>Produtividade</h1>
 
-    <div class="formulario">
-        <input type="text" id="nomeAutor" placeholder="Nome do Autor">
-        <input type="text" id="cpfAutor" placeholder="CPF do Autor">
-        <input type="text" id="enderecoAutor" placeholder="Endereço Completo">
-        <input type="text" id="nomeReu" placeholder="Nome do Réu">
-        <input type="text" id="valorCausa" placeholder="Valor da Causa">
-        <input type="text" id="numeroProcesso" placeholder="Número do Processo">
-        <input type="text" id="varaProcesso" placeholder="Vara do Processo">
-
-        <button onclick="gerarPeticao()">📄 Gerar Petição Inicial</button>
+    <div class="buttons">
+        <button onclick="mostrarFormulario('inicial')">📄 Gerar Petição Inicial</button>
+        <button onclick="mostrarFormulario('replica')">🧾 Gerar Réplica</button>
+        <button onclick="mostrarFormulario('contestacao')">⚖️ Gerar Contestação</button>
     </div>
 
-    <textarea id="textoPeticao" placeholder="Aqui aparecerá a petição preenchida..."></textarea>
+    <!-- FORMULÁRIO ESCONDIDO -->
+    <div id="formularioPeticao" style="display:none;">
+        <div class="formulario">
+            <input type="text" id="nomeAutor" placeholder="Nome do Autor">
+            <input type="text" id="cpfAutor" placeholder="CPF do Autor">
+            <input type="text" id="enderecoAutor" placeholder="Endereço Completo">
+            <input type="text" id="nomeReu" placeholder="Nome do Réu">
+            <input type="text" id="valorCausa" placeholder="Valor da Causa">
+            <input type="text" id="numeroProcesso" placeholder="Número do Processo">
+            <input type="text" id="varaProcesso" placeholder="Vara do Processo">
 
-    <div class="actions">
-        <button onclick="copiarTexto()">📋 Copiar Petição</button>
-        <button onclick="baixarTexto()">📥 Baixar Petição (Word)</button>
+            <button onclick="gerarPeticao()">🚀 Gerar Petição</button>
+        </div>
+
+        <textarea id="textoPeticao" placeholder="Aqui aparecerá a petição preenchida..."></textarea>
+
+        <div class="actions">
+            <button onclick="copiarTexto()">📋 Copiar Petição</button>
+            <button onclick="baixarTexto()">📥 Baixar Petição (Word)</button>
+        </div>
     </div>
 
     <div class="footer">
