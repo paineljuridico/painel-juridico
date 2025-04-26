@@ -3,23 +3,24 @@ body {
     background-color: #f4f7fa;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 10px auto;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .logo {
-    height: 300px; /* aumenta o tamanho da logo */
+    height: 120px; /* diminui um pouco */
     width: auto;
-    margin-bottom: -30px;
+    margin-bottom: -5px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -28,25 +29,25 @@ body {
 
 h1 {
     color: #0a1744;
-    margin-bottom: 20px;
-    font-size: 2.5em; /* aumenta o tamanho do título */
+    margin-bottom: 15px;
+    font-size: 2.2em;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     font-weight: bold;
-    letter-spacing: 1px; /* espaçamento entre letras */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* sombra leve */
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .buttons {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .buttons button {
     margin: 5px;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 15px;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #0a1744;
     color: white;
     transition: background-color 0.3s;
@@ -58,25 +59,26 @@ h1 {
 
 textarea#textoModelo {
     width: 100%;
-    padding: 12px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 14px;
     border-radius: 10px;
     border: 1px solid #ccc;
     resize: none;
     background-color: #f9f9f9;
+    min-height: 200px; /* diminui altura */
 }
 
 .actions {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .actions button {
     margin: 5px;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 15px;
     cursor: pointer;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: #28a745;
     color: white;
     transition: background-color 0.3s;
