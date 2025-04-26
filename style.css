@@ -1,77 +1,65 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f8fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+}
+
 .logo {
-    width: 400px;
-    margin: 5px auto 10px auto;
-    display: block;
+    width: 300px;
+    margin-bottom: 10px; /* Aqui reduzimos a distância */
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    color: #0a194f;
+    color: #0a1d4c;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin: 10px 0 30px 0; /* Margin reduzida no topo */
 }
 
-.buttons {
-    text-align: center;
-    margin-bottom: -10px;
-}
-
-.buttons button {
-    background-color: #0a194f;
-    color: #ffffff;
-    padding: 10px 20px;
+.buttons button, .actions button {
+    background-color: #0a1d4c;
+    color: white;
     border: none;
-    border-radius: 8px;
+    padding: 10px 18px;
     margin: 5px;
-    font-size: 14px;
+    border-radius: 8px;
+    font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-family: 'Georgia', serif;
 }
 
-.buttons button:hover {
-    background-color: #08163c;
+.buttons button:hover, .actions button:hover {
+    background-color: #071639;
 }
 
 textarea {
-    width: 90%;
-    height: 200px;
-    margin: 0 auto;
-    display: block;
+    width: 100%;
+    margin: 20px 0;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    resize: none;
-}
-
-.actions {
-    text-align: center;
-    margin: 20px 0 10px 0;
-}
-
-.actions button {
-    background-color: #0a194f; /* azul escuro igual aos outros */
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    margin: 5px;
+    font-family: 'Courier New', monospace;
     font-size: 14px;
-    cursor: pointer;
-    font-family: 'Georgia', serif;
-    transition: background-color 0.3s;
-}
-
-.actions button:hover {
-    background-color: #08163c;
+    height: 180px;
+    resize: vertical;
 }
 
 .footer {
-    text-align: center;
+    margin-top: 20px;
     font-size: 12px;
-    color: #777;
-    margin-bottom: 10px;
-    font-family: 'Georgia', serif;
+    color: #888;
+    text-align: center;
 }
