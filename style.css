@@ -9,7 +9,7 @@ body {
     background: white;
     width: 100%; /* AUMENTEI aqui para deixar o painel maior! */
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 80px auto;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    width: 350px; /* Tamanho da logo */
+    width: 400px; /* Tamanho da logo */
     margin-bottom: -60px; /* DIMINUI a distância entre logo e produtividade */
 }
 
