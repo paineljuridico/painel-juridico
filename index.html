@@ -13,12 +13,17 @@
 
     <h1>Produtividade</h1>
 
-    <div class="buttons">
-        <button onclick="carregarModelo('peticaoInicial')">📄 Petição Inicial</button>
-        <button onclick="carregarModelo('replica')">🧾 Réplica</button>
-        <button onclick="carregarModelo('contestacao')">⚖️ Contestação</button>
-        <button onclick="carregarModelo('execucaoSentenca')">📜 Execução de Sentença</button>
-    </div>
+  <div class="buttons">
+    <button onclick="carregarModelo('peticaoInicial')">📄 Modelo - Petição Inicial</button>
+    <button onclick="carregarModelo('replica')">🧾 Modelo - Réplica</button>
+    <button onclick="carregarModelo('contestacao')">⚖️ Modelo - Contestação</button>
+    <button onclick="carregarModelo('execucaoSentenca')">📜 Modelo - Execução de Sentença</button>
+    <hr style="margin: 20px 0;">
+    <button onclick="window.location.href='gerar-documento.html'">📝 Gerar Nova Petição Inicial</button>
+    <button onclick="window.location.href='gerar-replica.html'">📝 Gerar Nova Réplica</button>
+    <button onclick="window.location.href='gerar-contestacao.html'">📝 Gerar Nova Contestação</button>
+</div>
+
 
     <textarea id="textoModelo" placeholder="Selecione um modelo para carregar..." rows="15"></textarea>
 
