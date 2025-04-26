@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    height: 140px;
+    height: 180px; /* aumenta a altura da logo */
     width: auto;
     margin-bottom: -10px;
     display: block;
@@ -29,7 +29,13 @@ body {
 h1 {
     color: #0a1744;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 2.5em; /* aumenta o tamanho do título */
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px; /* espaçamento entre as letras */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* adiciona uma sombra leve */
+}
+
 }
 
 .formulario {
