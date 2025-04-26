@@ -1,64 +1,82 @@
 body {
     font-family: 'Georgia', serif;
-    background-color: #f5f8fc;
+    background-color: #f4f7fc;
     margin: 0;
     padding: 0;
 }
 
 .container {
     background: white;
-    width: 100%; /* AUMENTEI aqui para deixar o painel maior! */
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .logo {
-    width: 400px; /* Tamanho da logo */
-    margin-bottom: -60px; /* DIMINUI a distância entre logo e produtividade */
+    width: 200px;
+    margin: 10px auto 10px auto;
+    display: block;
 }
 
 h1 {
-    font-size: 32px;
-    color: #0a214f;
-    margin-top: 10px;
-    margin-bottom: 30px; /* Você pode diminuir para 20px se quiser ainda mais próximo */
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0a1d4f;
 }
 
-.buttons button, .actions button {
-    background-color: #0a214f;
-    color: white;
+.formulario input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.formulario button {
+    margin-top: 15px;
     padding: 10px 20px;
+    background-color: #0a1d4f;
+    color: white;
     border: none;
     border-radius: 8px;
-    margin: 8px;
-    font-size: 16px;
     cursor: pointer;
-}
-
-.buttons button:hover, .actions button:hover {
-    background-color: #001534;
+    font-size: 16px;
 }
 
 textarea {
     width: 100%;
     height: 250px;
-    padding: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    margin: 20px 0;
     border: 1px solid #ccc;
-    resize: vertical;
+    border-radius: 8px;
+    padding: 10px;
     font-family: monospace;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.actions {
+    margin: 20px 0;
+}
+
+.actions button {
+    background-color: #0a1d4f;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     font-size: 14px;
 }
 
 .footer {
     margin-top: 30px;
     font-size: 12px;
-    color: #666;
+    color: #777;
     text-align: center;
 }
