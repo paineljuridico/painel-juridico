@@ -1,3 +1,10 @@
+// Função para mostrar o formulário ao clicar no botão
+function mostrarFormulario(tipo) {
+    document.getElementById('formularioPeticao').style.display = 'block';
+    window.scrollTo(0, document.body.scrollHeight); // rola para o formulário
+}
+
+// Função para gerar a petição com os dados preenchidos
 function gerarPeticao() {
     const nomeAutor = document.getElementById('nomeAutor').value;
     const cpfAutor = document.getElementById('cpfAutor').value;
@@ -22,7 +29,7 @@ DOS FATOS
 (Descrever aqui os fatos...)
 
 DO PEDIDO
-Diante do exposto, requer a condenação do réu ao pagamento de indenização no valor de ${valorCausa}, acrescido de juros e correção monetária.
+Diante do exposto, requer a condenação do réu ao pagamento de ${valorCausa}, acrescido de juros e correção monetária.
 
 Termos em que, pede deferimento.
 
@@ -32,6 +39,7 @@ Natal/RN, 26 de abril de 2025.
     document.getElementById('textoPeticao').value = peticao;
 }
 
+// Função para copiar o texto gerado
 function copiarTexto() {
     const textarea = document.getElementById('textoPeticao');
     textarea.select();
@@ -39,6 +47,7 @@ function copiarTexto() {
     alert('Petição copiada com sucesso! ✅');
 }
 
+// Função para baixar o texto gerado
 function baixarTexto() {
     const texto = document.getElementById('textoPeticao').value;
     const blob = new Blob([texto], { type: 'application/msword' });
