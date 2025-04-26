@@ -14,36 +14,23 @@
     <h1>Produtividade</h1>
 
     <div class="buttons">
-        <button onclick="mostrarFormulario('peticaoInicial')">📄 Gerar Petição Inicial</button>
-        <button onclick="mostrarFormulario('replica')">🧾 Gerar Réplica</button>
-        <button onclick="mostrarFormulario('contestacao')">⚖️ Gerar Contestação</button>
+        <button onclick="carregarModelo('peticaoInicial')">📄 Petição Inicial</button>
+        <button onclick="carregarModelo('replica')">🧾 Réplica</button>
+        <button onclick="carregarModelo('contestacao')">⚖️ Contestação</button>
+        <button onclick="carregarModelo('execucaoSentenca')">📜 Execução de Sentença</button>
     </div>
 
-    <!-- FORMULÁRIO ESCONDIDO -->
-    <div id="formularioPeticao" style="display:none;">
-        <div class="formulario">
-            <input type="text" id="nomeAutor" placeholder="Nome do Autor">
-            <input type="text" id="cpfAutor" placeholder="CPF do Autor">
-            <input type="text" id="enderecoAutor" placeholder="Endereço Completo">
-            <input type="text" id="nomeReu" placeholder="Nome do Réu">
-            <input type="text" id="valorCausa" placeholder="Valor da Causa">
-            <input type="text" id="numeroProcesso" placeholder="Número do Processo">
-            <input type="text" id="varaProcesso" placeholder="Vara do Processo">
+    <textarea id="textoModelo" placeholder="Selecione um modelo para carregar..." rows="15"></textarea>
 
-            <button onclick="gerarPeticao()">🚀 Gerar Documento</button>
-        </div>
-
-        <textarea id="textoPeticao" placeholder="Aqui aparecerá o documento preenchido..."></textarea>
-
-        <div class="actions">
-            <button onclick="copiarTexto()">📋 Copiar Documento</button>
-            <button onclick="baixarTexto()">📥 Baixar Documento (Word)</button>
-        </div>
+    <div class="actions">
+        <button onclick="copiarTexto()">📋 Copiar Petição</button>
+        <button onclick="baixarTexto()">📥 Baixar Petição (Word)</button>
     </div>
 
     <div class="footer">
-        © 2025 -Jofre & Magalhães | Sistema Interno Jurídico
+        © 2025 - Jofre & Magalhães | Sistema Interno Jurídico
     </div>
+
 </div>
 
 <script src="script.js"></script>
