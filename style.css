@@ -31,7 +31,7 @@ h1 {
 }
 
 .buttons {
-    margin-bottom: 20px;
+    margin-bottom: -20px;
 }
 
 .buttons button {
