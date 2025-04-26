@@ -1,7 +1,7 @@
 .logo {
-    width: 220px; /* controla o tamanho da logo */
-    height: auto;
-    margin-bottom: 10px; /* distancia entre logo e título */
+    width: 200px;
+    margin: 20px auto 10px auto;
+    display: block;
 }
 
 .container {
@@ -42,17 +42,26 @@ textarea {
     font-family: 'Courier New', Courier, monospace;
     resize: none;
 }
+.actions {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
 
 .actions button {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: #ffffff;
+    padding: 10px 20px;
     border: none;
-    padding: 10px 18px;
-    margin: 10px 10px 0 10px;
     border-radius: 8px;
+    margin: 10px 10px;
+    font-size: 14px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
     font-family: 'Georgia', serif;
-    font-size: 16px;
+}
+
+.actions button:hover {
+    background-color: #003d80;
 }
 
 .footer {
