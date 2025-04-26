@@ -1,77 +1,64 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f8fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: white;
+    width: 80%; /* AUMENTEI aqui para deixar o painel maior! */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
 .logo {
-    width: 300px;
-    margin: 20px auto 10px auto;
-    display: block;
+    width: 250px; /* Tamanho da logo */
+    margin-bottom: 10px; /* DIMINUI a distância entre logo e produtividade */
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    color: #0a194f;
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    color: #0a214f;
+    margin-top: 10px;
+    margin-bottom: 30px; /* Você pode diminuir para 20px se quiser ainda mais próximo */
 }
 
-.buttons {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.buttons button {
-    background-color: #0a194f;
-    color: #ffffff;
+.buttons button, .actions button {
+    background-color: #0a214f;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
-    margin: 5px;
-    font-size: 14px;
+    margin: 8px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    font-family: 'Georgia', serif;
 }
 
-.buttons button:hover {
-    background-color: #08163c;
+.buttons button:hover, .actions button:hover {
+    background-color: #001534;
 }
 
 textarea {
-    width: 90%;
-    height: 200px;
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
+    width: 100%;
+    height: 250px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    resize: none;
-}
-
-.actions {
-    text-align: center;
-    margin: 20px 0 10px 0;
-}
-
-.actions button {
-    background-color: #0a194f; /* azul escuro igual aos outros */
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    margin: 5px;
+    resize: vertical;
+    font-family: monospace;
     font-size: 14px;
-    cursor: pointer;
-    font-family: 'Georgia', serif;
-    transition: background-color 0.3s;
-}
-
-.actions button:hover {
-    background-color: #08163c;
 }
 
 .footer {
-    text-align: center;
+    margin-top: 30px;
     font-size: 12px;
-    color: #777;
-    margin-bottom: 10px;
-    font-family: 'Georgia', serif;
+    color: #666;
+    text-align: center;
 }
