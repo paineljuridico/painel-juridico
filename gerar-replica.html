@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Réplica - Painel Jurídico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo Jofre & Magalhães" class="logo">
+        <h1>Gerar Réplica</h1>
+        <div class="formulario">
+            <input type="text" id="autor" placeholder="Nome do Autor">
+            <input type="text" id="reu" placeholder="Nome do Réu">
+            <input type="text" id="cpf" placeholder="CPF do Autor">
+            <input type="text" id="endereco" placeholder="Endereço do Autor">
+            <textarea id="fatos" placeholder="Resumo dos Fatos" rows="4"></textarea>
+            <input type="text" id="valor" placeholder="Valor da Causa (R$)">
+        </div>
+        <div class="actions">
+            <button onclick="gerarDocumento()">📄 Gerar Documento</button>
+            <button onclick="copiarTexto()">📋 Copiar Documento</button>
+            <button onclick="baixarTexto()">⬇️ Baixar Documento (Word)</button>
+            <button onclick="voltar()">🔙 Voltar</button>
+        </div>
+        <textarea id="resultado" placeholder="Documento gerado aparecerá aqui..." rows="15" readonly></textarea>
+        <footer>© 2025 Jofre & Magalhães | Sistema Interno Jurídico</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
