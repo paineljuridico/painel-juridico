@@ -36,3 +36,18 @@ function baixarTexto() {
     link.download = 'peticao.doc';
     link.click();
 }
+function limparCampos() {
+    document.getElementById('autor').value = '';
+    document.getElementById('reu').value = '';
+    document.getElementById('cpfAutor').value = '';
+    document.getElementById('cnpjReu').value = '';
+    document.getElementById('enderecoAutor').value = '';
+    document.getElementById('enderecoReu').value = '';
+    document.getElementById('fatos').value = '';
+    document.getElementById('valorCausa').value = '';
+    document.getElementById('resultado').innerText = '';
+}
+
+function voltarMenu() {
+    window.location.href = 'index.html';
+}
