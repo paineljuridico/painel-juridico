@@ -22,6 +22,7 @@ PROCESSO: 0100310-18.2016.8.20.0132
 
 JOSE HERIBERTO DOS SANTOS, já devidamente qualificado nos autos do processo em epígrafe, por intermédio do seu Advogado, conforme instrumento procuratório já se encontra acostado nos referidos autos, vem a presença de Vossa Excelência, informar e requerer.
 Excelência, o processo transitou em julgado conforme se verifica no (ID 138401233) em 11/12/2024, ou seja, não existiu qualquer intimação para a parte autora requerer o que entende de direito, como por exemplo apresentara execução de sentença, logo, a secretaria ARQUIVOU O PROCESSO FORMA ERRADA, acarretando assim mais um atraso na tramitação do processo.
+
 Disso isso, se faz necessário o desarquivamento dos autos do processo e intimação da parte requerida para pagar ou impugnar a EXECUÇÃO DE SENTENÇA, ora apresentada sem a devida intimação.
 
 I - DANOS MATERIAIS
