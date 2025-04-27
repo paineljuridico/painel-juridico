@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtividade - Painel Jurídico</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Geradores de Documentos</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .botao-gerador {
+            display: block;
+            margin: 15px auto;
+            padding: 15px 25px;
+            background-color: #0b2b5e;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .botao-gerador:hover {
+            background-color: #0d3680;
+        }
+
+        .voltar {
+            margin-top: 30px;
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="images/logo.png" alt="Logo Jofre & Magalhães" class="logo">
-        <h1>Produtividade</h1>
-    
-    
 
-        <div class="buttons">
-            <button onclick="carregarModelo('peticaoInicial')">🔥 Petição Inicial</button>
-            <button onclick="carregarModelo('replica')">📝 Réplica</button>
-            <button onclick="carregarModelo('contestacao')">⚖️ Contestação</button>
-            <button onclick="carregarModelo('execucaoSentenca')">📜 Execução de Sentença</button>
-        </div>
+<div class="container">
+    <img src="../logo.png" alt="Logo Jofre & Magalhães" class="logo">
+    <h1>Geradores de Documentos</h1>
 
-        <textarea id="textoModelo" placeholder="Selecione um modelo para carregar..." rows="20"></textarea>
+    <a href="gerar-peticao.html" class="botao-gerador">📝 Gerar Petição Inicial</a>
+    <a href="gerar-replica.html" class="botao-gerador">📝 Gerar Réplica</a>
+    <a href="gerar-contestacao.html" class="botao-gerador">📝 Gerar Contestação</a>
 
-        <div class="actions">
-            <button onclick="copiarTexto()">📋 Copiar Petição</button>
-            <button onclick="baixarTexto()">⬇️ Baixar Petição (Word)</button>
-        </div>
+    <a href="../index.html" class="botao-gerador voltar">🔙 Voltar ao Painel Principal</a>
+
+    <div class="footer">
+        © 2025 - Jofre & Magalhães | Sistema Interno Jurídico
     </div>
+</div>
 
-    <script src="script.js"></script>
 </body>
 </html>
