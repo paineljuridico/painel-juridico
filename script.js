@@ -11,8 +11,7 @@ function carregarModelo(tipo) {
         case 'contestacao':
             textoModelo = 'Modelo de Contestação carregado...';
             break;
-        case 'execucaoSentenca':
-            textoModelo = 'EXCELENTÍSSIMO(A) SENHOR(A) DOUTOR(A) JUIZ(A) DE DIREITO DA VARA ÚNICA DA COMARCA DE SÃO PAULO DO POTENGI, ESTADO DO RIO GRANDE DO NORTE.
+        case 'execucaoSentenca': textoModelo = 'EXCELENTÍSSIMO(A) SENHOR(A) DOUTOR(A) JUIZ(A) DE DIREITO DA VARA ÚNICA DA COMARCA DE SÃO PAULO DO POTENGI, ESTADO DO RIO GRANDE DO NORTE.
 
 EXECUÇÃO DE SENTENÇA
             
@@ -54,8 +53,7 @@ Nestes termos, pede e espera o deferimento.
 Santa Cruz/RN, data do expediente eletrônico.
 
 JULIO CÉSAR MAGALHÃES SOARES
-OAB/RN 19.847
-';
+OAB/RN 19.847';
             break;
         default:
             textoModelo = 'Selecione um modelo para carregar.';
