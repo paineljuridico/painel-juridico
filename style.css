@@ -1,113 +1,93 @@
-/* style.css - Opção 2: Profissional e Sutil */
-
 body {
-    font-family: 'Open Sans', sans-serif; /* Uma fonte moderna e legível */
-    background-color: #e9ecef; /* Outro tom de cinza claro */
+    background-color: #aec2e2;
+    font-family: "Georgia", "Times New Roman", serif;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 0;
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.06);
-    padding: 50px;
-    width: 90%;
-    max-width: 750px;
+    background: #ffffff;
+    width: 1000px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 1px 10px rgb(179 110 110 / 10%);
     text-align: center;
 }
 
 .logo {
-    max-width: 160px;
+    width: 350px;
     height: auto;
-    margin-bottom: 30px;
+    margin-bottom: -95px;
 }
 
 h1 {
-    color: #495057; /* Cinza neutro */
-    margin-bottom: 40px;
-    font-size: 2.3em;
-    font-weight: 600;
-}
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: px;
+    font-weight: bold;
+    color: #214ba1;
+    margin-top: 0;
+    margin-bottom: 20px;
+   }
 
 .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 40px;
-    justify-content: center;
+    margin: 20px 0;
 }
 
 .buttons button {
-    background-color: #6c757d; /* Cinza mais escuro para os botões primários */
-    color: white;
+    background-color: #0a1d44;
+    color: #e9e5e5;
+    padding: 12px 15px;
+    margin: 5px;
     border: none;
-    border-radius: 6px;
-    padding: 12px 22px;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    flex-grow: 1;
-    min-width: 140px;
-    box-shadow: 0 1px 4px rgba(108, 117, 125, 0.3);
+    transition: background-color 0.3s ease;
 }
 
 .buttons button:hover {
-    background-color: #495057;
-}
-
-.buttons button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.5);
+    background-color: #14285c;
 }
 
 textarea {
     width: 100%;
-    min-height: 260px;
-    padding: 16px;
-    margin-bottom: 30px;
-    border: 1px solid #d1d3d5; /* Borda cinza clara */
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-family: 'Courier New', monospace;
-    font-size: 14px;
-    line-height: 1.7;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #7a9bbd;
     resize: vertical;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    height: 300px;
 }
 
 .actions {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .actions button {
-    background-color: #17a2b8; /* Azul teal para botões de ação */
-    color: white;
+    background-color: #0a1d44;
+    color: #e9e5e5;
+    padding: 10px 20px;
+    margin: 5px;
     border: none;
-    border-radius: 6px;
-    padding: 12px 22px;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-    box-shadow: 0 1px 4px rgba(23, 162, 184, 0.3);
+    transition: background-color 0.3s ease;
 }
 
 .actions button:hover {
-    background-color: #138496;
-}
-
-.actions button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.5);
+    background-color: #14285c;
 }
 
 .footer {
-    color: #868e96; /* Cinza ainda mais claro */
-    font-size: 0.9em;
-    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    padding: 1px 0;
 }
