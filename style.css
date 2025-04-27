@@ -1,8 +1,8 @@
-/* style.css - Opção 1: Clean e Moderno */
+/* style.css - Opção 2: Profissional e Sutil */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa; /* Um tom de cinza bem claro */
+    font-family: 'Open Sans', sans-serif; /* Uma fonte moderna e legível */
+    background-color: #e9ecef; /* Outro tom de cinza claro */
     margin: 0;
     display: flex;
     justify-content: center;
@@ -12,102 +12,102 @@ body {
 
 .container {
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
-    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.06);
+    padding: 50px;
     width: 90%;
-    max-width: 800px;
+    max-width: 750px;
     text-align: center;
 }
 
 .logo {
-    max-width: 180px;
+    max-width: 160px;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 h1 {
-    color: #343a40; /* Cinza um pouco mais escuro */
-    margin-bottom: 35px;
-    font-size: 2.4em;
-    font-weight: 500;
+    color: #495057; /* Cinza neutro */
+    margin-bottom: 40px;
+    font-size: 2.3em;
+    font-weight: 600;
 }
 
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 35px;
+    gap: 10px;
+    margin-bottom: 40px;
     justify-content: center;
 }
 
 .buttons button {
-    background-color: #007bff;
+    background-color: #6c757d; /* Cinza mais escuro para os botões primários */
     color: white;
     border: none;
-    border-radius: 10px;
-    padding: 14px 24px;
-    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px 22px;
+    font-size: 15px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     flex-grow: 1;
-    min-width: 160px;
-    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2); /* Sombra azul suave */
+    min-width: 140px;
+    box-shadow: 0 1px 4px rgba(108, 117, 125, 0.3);
 }
 
 .buttons button:hover {
-    background-color: #0056b3;
+    background-color: #495057;
 }
 
 .buttons button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.5);
 }
 
 textarea {
     width: 100%;
-    min-height: 280px;
-    padding: 18px;
-    margin-bottom: 25px;
-    border: 1px solid #ced4da; /* Cinza claro para a borda */
-    border-radius: 10px;
+    min-height: 260px;
+    padding: 16px;
+    margin-bottom: 30px;
+    border: 1px solid #d1d3d5; /* Borda cinza clara */
+    border-radius: 6px;
     box-sizing: border-box;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.7;
     resize: vertical;
 }
 
 .actions {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .actions button {
-    background-color: #28a745;
+    background-color: #17a2b8; /* Azul teal para botões de ação */
     color: white;
     border: none;
-    border-radius: 10px;
-    padding: 14px 24px;
-    font-size: 16px;
+    border-radius: 6px;
+    padding: 12px 22px;
+    font-size: 15px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    box-shadow: 0 2px 6px rgba(40, 167, 69, 0.2); /* Sombra verde suave */
+    box-shadow: 0 1px 4px rgba(23, 162, 184, 0.3);
 }
 
 .actions button:hover {
-    background-color: #1e7e34;
+    background-color: #138496;
 }
 
 .actions button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.4);
+    box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.5);
 }
 
 .footer {
-    color: #6c757d; /* Cinza um pouco mais claro */
-    font-size: 0.95em;
-    margin-top: 25px;
+    color: #868e96; /* Cinza ainda mais claro */
+    font-size: 0.9em;
+    margin-top: 30px;
 }
