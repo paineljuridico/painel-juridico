@@ -59,7 +59,6 @@ JULIO CÉSAR MAGALHÃES SOARES
 OAB/RN 19.847
 ';
             break;
-        default:
             textoModelo = 'Selecione um modelo para carregar...';
     }
 
