@@ -1,93 +1,113 @@
+/* style.css - Opção 1: Clean e Moderno */
+
 body {
-    background-color: #aec2e2;
-    font-family: "Georgia", "Times New Roman", serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Um tom de cinza bem claro */
     margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    background: #ffffff;
-    width: 1000px;
-    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
     padding: 40px;
-    border-radius: 40px;
-    box-shadow: 1px 10px rgb(179 110 110 / 10%);
+    width: 90%;
+    max-width: 800px;
     text-align: center;
 }
 
 .logo {
-    width: 350px;
+    max-width: 180px;
     height: auto;
-    margin-bottom: -95px;
+    margin-bottom: 25px;
 }
 
 h1 {
-    font-family: "Georgia", "Times New Roman", serif;
-    font-size: px;
-    font-weight: bold;
-    color: #214ba1;
-    margin-top: 0;
-    margin-bottom: 20px;
-   }
+    color: #343a40; /* Cinza um pouco mais escuro */
+    margin-bottom: 35px;
+    font-size: 2.4em;
+    font-weight: 500;
+}
 
 .buttons {
-    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+    justify-content: center;
 }
 
 .buttons button {
-    background-color: #0a1d44;
-    color: #e9e5e5;
-    padding: 12px 15px;
-    margin: 5px;
+    background-color: #007bff;
+    color: white;
     border: none;
     border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 14px 24px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease-in-out;
+    flex-grow: 1;
+    min-width: 160px;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2); /* Sombra azul suave */
 }
 
 .buttons button:hover {
-    background-color: #14285c;
+    background-color: #0056b3;
+}
+
+.buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
 }
 
 textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    min-height: 280px;
+    padding: 18px;
+    margin-bottom: 25px;
+    border: 1px solid #ced4da; /* Cinza claro para a borda */
     border-radius: 10px;
-    border: 1px solid #7a9bbd;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
     resize: vertical;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
-    height: 300px;
 }
 
 .actions {
-    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 35px;
 }
 
 .actions button {
-    background-color: #0a1d44;
-    color: #e9e5e5;
-    padding: 10px 20px;
-    margin: 5px;
+    background-color: #28a745;
+    color: white;
     border: none;
     border-radius: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    padding: 14px 24px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(40, 167, 69, 0.2); /* Sombra verde suave */
 }
 
 .actions button:hover {
-    background-color: #14285c;
+    background-color: #1e7e34;
+}
+
+.actions button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.4);
 }
 
 .footer {
-    text-align: center;
-    font-size: 12px;
-    color: #666;
-    margin-top: 10px;
-    padding: 1px 0;
+    color: #6c757d; /* Cinza um pouco mais claro */
+    font-size: 0.95em;
+    margin-top: 25px;
 }
