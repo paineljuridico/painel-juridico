@@ -1,7 +1,8 @@
-function carregarModelo(tipo) {
+// Funções de carregamento de modelo
+function carregarModelo(modelo) {
     let textoModelo = '';
 
-    switch (tipo) {
+    switch (modelo) {
         case 'peticaoInicial':
             textoModelo = 'Modelo de Petição Inicial carregado...';
             break;
@@ -15,39 +16,28 @@ function carregarModelo(tipo) {
             textoModelo = 'Modelo de Execução de Sentença carregado...';
             break;
         default:
-            textoModelo = 'Selecione um modelo para carregar.';
+            textoModelo = 'Selecione um modelo para carregar...';
     }
 
-    document.getElementById('textoModelo').value = textoModelo;
+    document.getElementById('textModelo').value = textoModelo;
 }
 
+// Função para copiar o texto
 function copiarTexto() {
-    const textarea = document.getElementById('textoModelo');
+    const textarea = document.getElementById('textModelo');
     textarea.select();
     document.execCommand('copy');
-    alert('Petição copiada com sucesso! ✅');
+
+    alert('Texto copiado com sucesso! ✅');
 }
 
+// Função para baixar o texto como Word
 function baixarTexto() {
-    const texto = document.getElementById('textoModelo').value;
+    const texto = document.getElementById('textModelo').value;
     const blob = new Blob([texto], { type: 'application/msword' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
     link.download = 'peticao.doc';
     link.click();
 }
-function limparCampos() {
-    document.getElementById('autor').value = '';
-    document.getElementById('reu').value = '';
-    document.getElementById('cpfAutor').value = '';
-    document.getElementById('cnpjReu').value = '';
-    document.getElementById('enderecoAutor').value = '';
-    document.getElementById('enderecoReu').value = '';
-    document.getElementById('fatos').value = '';
-    document.getElementById('valorCausa').value = '';
-    document.getElementById('resultado').innerText = '';
-}
 
-function voltarMenu() {
-    window.location.href = 'index.html';
-}
