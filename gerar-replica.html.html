@@ -3,31 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtividade - Painel Jurídico</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gerar Réplica Automática</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .upload-area {
+            margin: 20px 0;
+            padding: 30px;
+            border: 2px dashed #0b2b5e;
+            border-radius: 10px;
+            background-color: #f4f7fa;
+        }
+        .upload-area input[type="file"] {
+            margin-top: 15px;
+        }
+        #resultadoIA {
+            width: 90%;
+            margin-top: 20px;
+            height: 200px;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            resize: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <img src="images/logo.png" alt="Logo Jofre & Magalhães" class="logo">
-        <h1>Produtividade</h1>
-    
-    
 
-        <div class="buttons">
-            <button onclick="carregarModelo('peticaoInicial')">🔥 Petição Inicial</button>
-            <button onclick="carregarModelo('replica')">📝 Réplica</button>
-            <button onclick="carregarModelo('contestacao')">⚖️ Contestação</button>
-            <button onclick="carregarModelo('execucaoSentenca')">📜 Execução de Sentença</button>
-        </div>
+<div class="container">
+    <img src="../logo.png" alt="Logo Jofre & Magalhães" class="logo">
+    <h1>Gerar Réplica Automática</h1>
 
-        <textarea id="textoModelo" placeholder="Selecione um modelo para carregar..." rows="20"></textarea>
-
-        <div class="actions">
-            <button onclick="copiarTexto()">📋 Copiar Petição</button>
-            <button onclick="baixarTexto()">⬇️ Baixar Petição (Word)</button>
-        </div>
+    <div class="upload-area">
+        <p><strong>Subir Contestação:</strong></p>
+        <input type="file" id="arquivoContestacao" accept=".pdf,.docx">
     </div>
 
-    <script src="script.js"></script>
+    <div class="actions">
+        <button onclick="simularIA()">🚀 Gerar Réplica</button>
+        <button onclick="copiarResposta()">📋 Copiar Resposta</button>
+        <button onclick="voltarPainel()">🔙 Voltar ao Painel</button>
+    </div>
+
+    <textarea id="resultadoIA" placeholder="A resposta gerada pela IA aparecerá aqui..."></textarea>
+
+    <div class="footer">
+        © 2025 - Jofre & Magalhães | Sistema Interno Jurídico
+    </div>
+</div>
+
+<script>
+function simularIA() {
+    const arquivo = document.getElementById('arquivoContestacao').files[0];
+    if (!arquivo) {
+        alert('Por favor, selecione um arquivo.');
+        return;
+    }
+
+    // Simulação: Geração de réplica automática
+    document.getElementById('resultadoIA').value = 
+        "IA analisou a contestação e gerou a seguinte réplica:\\n\\n" +
+        "1. O banco não comprovou a origem da dívida.\\n" +
+        "2. Não houve contratação válida demonstrada.\\n" +
+        "3. Requer a procedência dos pedidos iniciais.";
+}
+
+function copiarResposta() {
+    const resultado = document.getElementById('resultadoIA');
+    resultado.select();
+    document.execCommand('copy');
+    alert('Resposta copiada com sucesso! ✅');
+}
+
+function voltarPainel() {
+    window.location.href = "../index.html";
+}
+</script>
+
 </body>
 </html>
